@@ -1,6 +1,6 @@
 {
   "ignore": [
 	"*.json",
-	"README"
+	"README.md"
   ]
 }
