@@ -15,7 +15,8 @@ URL: [https://github.com/ganeshrvel/axios-isomorphic-routing](https://github.com
 
 ### Overview:
 #### Why **Axios Isomorphic Routing Controller**?
-Axios is a such a fantastic Javascript library built for fetching RESTful APIs data across the internet. Although the library is very powerful we obviously might run into more requirements which are not available in the existing Axios package. So I thought: 'Heck!! Why don't I try creating something advanced for routing and controlling Axios data flow'.
+> "Axios is a Promise-based HTTP client for JavaScript which can be used in your front-end application and in your Node.js backend". 
+> Although the library is very powerful we often run into situations where we wished it offered us more. And that's the motivation behind this project.
 
 #### Features:
 - Cache for both server and client side.
