@@ -1,5 +1,5 @@
 
-# Axios Isomorphic Routing Controller for Node.js
+# Axios Isomorphic Routing Controller in Node.js
 
 License: MIT
 
@@ -311,7 +311,7 @@ make({
 - Development
 - Initial commit
 
-###Dependencies:
+### Dependencies:
 - Axios
 - bluebird
 - localforage
