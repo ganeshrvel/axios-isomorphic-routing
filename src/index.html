@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Axios Isomorphic Routing Controller - Node.js | Ganesh Rathinavel</title>
+</head>
+<body>
+
+<h1>Axios Isomorphic Routing Controller in Node.js</h1>
+
+<div>
+	<p>For Server side Axios routing demo: <a href="/demo/server"><strong>/demo/server</strong></a></p>
+	<p>For Client side Axios routing demo: <strong>fire up the browser console.</strong></p>
+	<br/>
+
+	<p>For indepth explanation go through <i>README.md</i></p>
+	<p><i>src/examples/server.js</i> for server side API call</p>
+	<p><i>src/examples/client.js</i> for client side API call</p>
+	<br/>
+
+	<p><i>src/api/consts.js</i> for changing modifying constant values</p>
+	<p><i>src/api/end-points.js</i> for modifying or adding API end points</p>
+	<br/>
+
+	<p><i>express/routes.js</i> for adding new server routes</p>
+	<br/>
+
+	<div>
+		<p><strong>Available API end points:</strong></p>
+		<div>
+			<p>http://localhost:3001/cars?start=2005&#x26;end=2010</p>
+			<p>Method type: GET</p>
+			<br/>
+
+			<p>http://localhost:3001/cities</p>
+			<p>Method type: POST</p>
+			<p>POST data: {"countries": "China", "limit": 2}</p>
+			<br/>
+
+			<p>http://localhost:3001/try_put</p>
+			<p>Method type: PUT</p>
+			<p>POST data: {"param1": "12345", "param2": "abcdefg"}</p>
+			<br/>
+
+			<p>http://localhost:3001/try_delete</p>
+			<p>Method type: DELETE</p>
+			<p>POST data: {"param1": "12345", "param2": "abcdefg"}</p>
+			<br/>
+
+			<p>http://localhost:3001/test_cache1?param1=animals&#x26;param2=plants</p>
+			<p>Method type: GET</p>
+			<br/>
+
+
+			<p>http://localhost:3001/test_cache2?param1=animals&#x26;param2=plants</p>
+			<p>Method type: POST</p>
+			<p>POST data: {"planet1": "mars", "planet2": "jupiter"}</p>
+			<br/>
+
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
