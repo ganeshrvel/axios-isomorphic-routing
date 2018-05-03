@@ -1,5 +1,5 @@
 
-# Axios Isomorphic Routing Controller in Node.js
+# Axios Isomorphic Routing Controller for Node.js
 
 License: MIT
 
