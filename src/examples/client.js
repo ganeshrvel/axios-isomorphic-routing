@@ -1,10 +1,10 @@
 'use strict'
 
-const {make} = require('../api/index')
+const {make} = require('../api')
 
 module.exports = function () {
   /**
-   * @param request: End point to hit; Find the endpoint reference from 'end-points.js'
+   * @param request: The Endpoint to hit; Find the endpoint reference from 'end-points.js'
    * @param queryString: Query string or parameters to hit the API,
    * @param data: Body data for POST and PUT action types; No data is accepted by GET or DELETE
    * @param allowCache: Allow the caching of output data; It will be different for different query string parameters. Or read from an already cached record.
@@ -12,7 +12,7 @@ module.exports = function () {
    * @param allowDataCache: Allow the caching of the POST body data.
    *  Eg: Various combinations of post parameters along with the respective output can be cached for an ecommerce/classified website options filter. This saves a massive amount of API calls by caching previous records of the filter combinations.
    * @param ...args: {customEndPoint}
-   * customEndPoint => Dynamically generated end points along with url and method
+   * customEndPoint => Dynamically generated endpoints along with url and method
    * @returns Promise
    */
   
@@ -216,7 +216,7 @@ module.exports = function () {
    */
     //Some random end points
     //Note: apiUrl and method has to be supplied to customEndPoint as an object
-  let _endPointDictionary = [
+  let endPointDictionary = [
       {
         apiUrl: 'try_put',
         method: 'PUT',
@@ -234,7 +234,7 @@ module.exports = function () {
     allowCache: true,
     rebuildCache: false,
     allowDataCache: false,
-    customEndPoint: _endPointDictionary[0],
+    customEndPoint: endPointDictionary[0],
   }).then(response => {
     console.log('######################################')
     console.log(`
@@ -259,7 +259,7 @@ module.exports = function () {
     allowCache: true,
     rebuildCache: false,
     allowDataCache: false,
-    customEndPoint: _endPointDictionary[1],
+    customEndPoint: endPointDictionary[1],
   }).then(response => {
     console.log('######################################')
     console.log(`

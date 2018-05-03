@@ -1,6 +1,6 @@
 'use strict'
 
-const {make} = require('../api/index')
+const {make} = require('../api')
 
 module.exports = function () {
   /**

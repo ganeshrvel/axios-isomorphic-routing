@@ -308,6 +308,17 @@ function fetchNewItem ({rebuildCache, allowCache, allowDataCache, actionType, re
   })
 }
 
+/**
+ * Used for fetching single item at a time.
+ * The output: Object returned as a promise
+ * @param request
+ * @param queryString
+ * @param data
+ * @param allowCache
+ * @param rebuildCache
+ * @param args
+ * @returns Promise
+ */
 function fetchItem ({request, queryString = null, data = {}, allowCache = false, rebuildCache = false, args}) {
   return Promise.resolve(fetch({
     request: request,
@@ -319,6 +330,15 @@ function fetchItem ({request, queryString = null, data = {}, allowCache = false,
   }))
 }
 
+/**
+ * Used for fetching multiple items at a time.
+ * The output: Array Object returned as a promise
+ * @param request
+ * @param allowCache
+ * @param rebuildCache
+ * @param args
+ * @returns Promise
+ */
 function fetchItems ({request, allowCache = false, rebuildCache = false, args}) {
   return Promise.all(Object.keys(request).map(a =>
     fetchItem({
@@ -335,7 +355,7 @@ function fetchItems ({request, allowCache = false, rebuildCache = false, args}) 
 }
 
 /**
- * @param request: End point to hit; Find the endpoint reference from 'end-points.js'
+ * @param request: The Endpoint to hit; Find the endpoint reference from 'end-points.js'
  * @param queryString: Query string or parameters to hit the API,
  * @param data: Body data for POST and PUT action types; No data is accepted by GET or DELETE
  * @param allowCache: Allow the caching of output data; It will be different for different query string parameters. Or read from an already cached record.
@@ -343,7 +363,7 @@ function fetchItems ({request, allowCache = false, rebuildCache = false, args}) 
  * @param allowDataCache: Allow the caching of the POST body data.
  *  Eg: Various combinations of post parameters along with the respective output can be cached for an ecommerce/classified website options filter. This saves a massive amount of API calls by caching previous records of the filter combinations.
  * @param ...args: {customEndPoint}
- * customEndPoint => Dynamically generated end points along with url and method
+ * customEndPoint => Dynamically generated endpoints along with url and method
  * @returns Promise
  */
 
