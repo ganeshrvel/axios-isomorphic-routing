@@ -2,8 +2,11 @@
 # Axios Isomorphic Routing Controller in Node.js
 
 License: MIT
+
 Author: Ganesh Rathinavel
+
 Requirements: es6, javascript enabled browser or node.js
+
 Version: 1.00
 
 URL: [https://github.com/ganeshrvel/axios-isomorphic-routing](https://github.com/ganeshrvel/axios-isomorphic-routing)
@@ -269,8 +272,8 @@ make({
 
 
 #### Demo:
-For Server side Axios routing demo: http://localhost:3001/demo/server
-For Client side Axios routing demo: Fire up the browser console.
+- For Server side Axios routing demo: http://localhost:3001/demo/server
+- For Client side Axios routing demo: Fire up the browser console.
 
 #### Available API end points:
 
@@ -301,19 +304,19 @@ For Client side Axios routing demo: Fire up the browser console.
 
 ### Changelogs:
 ##### v1.0:
-Compiled README.md
-Cleaned a few lines of code and documentation.
+- Compiled README.md
+- Cleaned a few lines of code and documentation.
 
 ##### v0.1:
-Development
-Initial commit
+- Development
+- Initial commit
 
 ###Dependencies:
-Axios
-bluebird
-localforage
-lru-cache
+- Axios
+- bluebird
+- localforage
+- lru-cache
 
 ### Credits:
-Axios
-Hackernews
+- Axios
+- Hackernews
