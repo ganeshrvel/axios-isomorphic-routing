@@ -1,6 +1,6 @@
 {
   "name": "axios-isomorphic-routing",
-  "version": "Axios Isomorphic Routing",
+  "version": "1.0.2",
   "description": "Axios Isomorphic Routing Controller for Node.js",
   "main": "index.js",
   "scripts": {

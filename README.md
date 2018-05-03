@@ -7,7 +7,7 @@ Author: Ganesh Rathinavel
 
 Requirements: es6, javascript enabled browser or node.js
 
-Version: 1.00
+Version: 1.0.2
 
 URL: [https://github.com/ganeshrvel/axios-isomorphic-routing](https://github.com/ganeshrvel/axios-isomorphic-routing)
 
