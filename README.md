@@ -1,24 +1,18 @@
+# Axios Isomorphic Routing Controller
 
-# Axios Isomorphic Routing Controller for Node.js
+- Author: [Ganesh Rathinavel](https://www.linkedin.com/in/ganeshrvel "Ganesh Rathinavel")
+- License: [MIT](https://github.com/ganeshrvel/axios-isomorphic-routing/blob/master/LICENSE "MIT")
+- Repo URL: [https://github.com/ganeshrvel/axios-isomorphic-routing](https://github.com/ganeshrvel/axios-isomorphic-routing "https://github.com/ganeshrvel/axios-isomorphic-routing")
+- Contacts: ganeshrvel@outlook.com
+- Requirements: Node.js v6+ or higher, npm
 
-License: MIT
+##### Advanced Router Controller for Vue.js, React.js & Node.js Isomorphic apps
 
-Author: Ganesh Rathinavel
-
-Requirements: es6, javascript enabled browser or node.js
-
-Version: 1.0.2
-
-URL: [https://github.com/ganeshrvel/axios-isomorphic-routing](https://github.com/ganeshrvel/axios-isomorphic-routing)
-
-------------
-
-### Overview:
 #### Why **Axios Isomorphic Routing Controller**?
-> "Axios is a Promise-based HTTP client for JavaScript which can be used in your front-end application and in your Node.js backend". 
-> Although the library is very powerful we often run into situations where we wished it offered us more. And that's the motivation behind this project.
+> Axios is a Promise-based HTTP client for JavaScript which can be used for both Frontend and Backend Applications.
+> Although the library is very powerful we often run into situations where we wish it'd offered us more and that's the motivation behind this project.
 
-#### Features:
+### Features
 - Cache for both server and client side.
 - LRU for the server and localforage for the client.
 - Warm cache which refreshes at a regular interval of time.
@@ -28,7 +22,7 @@ URL: [https://github.com/ganeshrvel/axios-isomorphic-routing](https://github.com
 - Purge and rebuild the cache on the fly.
 
 
-#### Structure:
+### Structure
 
     |-- axios-isomorphic-routing
         |-- server.js
@@ -50,11 +44,11 @@ URL: [https://github.com/ganeshrvel/axios-isomorphic-routing](https://github.com
                 |-- client.js
                 |-- server.js
 
-##### Basic description:
+### General Information
 
 **server.js**: Node entry point
 
-**express/routes.js**: 
+**express/routes.js**:
 Server endpoint router. Codes for GET/POST/PUT/DELETE routing is written here.
 The JSON values are fetched from 'express/mock-data/*.json' files.
 
@@ -69,18 +63,28 @@ The JSON values are fetched from 'express/mock-data/*.json' files.
 **src/examples**: Demo for both server and client side Axios routing and method usage.
 
 
-#### Installation:
-    git clone https://github.com/ganeshrvel/axios-isomorphic-routing.git
-    cd axios-isomorphic-routing
-    npm install
-    npm run start
+### Installation
+   ```shell
+    $ git clone --depth 1 --single-branch --branch master https://github.com/ganeshrvel/axios-isomorphic-routing.git
+    
+    $ cd axios-isomorphic-routing
+    ```
+	
+### Run
+    $ npm install
+    
+    $ npm run start
 
-App launch address: http://localhost:3001/
+- App launch address: [http://localhost:3001/](http://localhost:3001/ "http://localhost:3001/")
 
-#### Usage:
-    //Import make() method from api
+- For Server side Axios routing demo: [http://localhost:3001/demo/server](http://localhost:3001/demo/server "http://localhost:3001/demo/server")
+
+- For Client side Axios routing demo: Fire up the browser console.
+
+### Usage
+    // import make() method from api
     const {make} = require('../src/api')
-##### Basic structure of the method:
+    
 ```javascript
  /**
    * @param request: The end point to hit; Find the endpoint reference from 'end-points.js'
@@ -97,11 +101,11 @@ App launch address: http://localhost:3001/
    
 make({
     request,
-    queryString
-    data
-    allowCache
-    rebuildCache
-    allowDataCache
+    queryString,
+    data,
+    allowCache,
+    rebuildCache,
+    allowDataCache,
     customEndPoint,
   }).
   then(response => {
@@ -255,28 +259,23 @@ make({
   }).then(response => {
    console.log(response)
   })
-}
 
 ```
 
 **Warm cache**:
 > 
-- warmCacheList as defined in: 'src/api/consts.js'
+- 'warmCacheList' as defined in: 'src/api/consts.js'
 - Warm cache refresh list;
 - Allowed Methods: GET
--  These are loaded when the server fires up and keeps refreshing every 'WARM_CACHE_REFRESH_TIME' seconds.
--  The list will keep getting updated at a regular interval.
--  Usage: Website wide data caching.
--  Scope: Server only. Client can't access this data.
--   To over ride the Warm cache allowCache can be set false while making the API call.
--  Important: DO NOT add the APIs used for fetching personal user data.
+- These are loaded when the server fires up and keeps refreshing every 'WARM_CACHE_REFRESH_TIME' seconds.
+- The list will keep getting updated at a regular interval.
+- Usage: Website wide data caching.
+- Scope: Server only. Client can't access this data.
+- To over ride the Warm cache allowCache can be set false while making the API call.
+- Important: DO NOT add the APIs used for fetching personal user data.
 
 
-#### Demo:
-- For Server side Axios routing demo: http://localhost:3001/demo/server
-- For Client side Axios routing demo: Fire up the browser console.
-
-#### Available API end points:
+### Dummy API end-points:
 
     http://localhost:3001/cars?start=2005&end=2010
     Method type: GET
@@ -300,9 +299,6 @@ make({
     Method type: POST
     POST data: {"planet1": "mars", "planet2": "jupiter"}
 
-------------
-
-
 ### Changelogs:
 ##### v1.0:
 - Compiled README.md
@@ -312,12 +308,31 @@ make({
 - Development
 - Initial commit
 
-### Dependencies:
+### Dependencies
 - Axios
 - bluebird
 - localforage
 - lru-cache
 
-### Credits:
-- Axios
-- Hackernews
+
+ ### Contribute
+- Fork the repo and create your branch from master.
+- Update the documentation if needed.
+- Issue a pull request!
+
+When you submit code changes, your submissions are understood to be under the same [MIT License](https://github.com/ganeshrvel/axios-isomorphic-routing/blob/master/LICENSE "MIT License") that covers the project. Feel free to contact the maintainers if that's a concern.
+
+
+### Buy me a coffee
+Help me keep the app FREE and open for all.
+Paypal me: [paypal.me/ganeshrvel](https://paypal.me/ganeshrvel "paypal.me/ganeshrvel")
+
+
+### Contacts
+Please feel free to contact me at ganeshrvel@outlook.com
+
+
+### License
+axios-isomorphic-routing | Advanced Router Controller for Vue.js, React.js & Node.js Isomorphic apps is released under [MIT License](https://github.com/ganeshrvel/axios-isomorphic-routing/blob/master/LICENSE "MIT License").
+
+Copyright © 2018 - 2019 Ganesh Rathinavel
