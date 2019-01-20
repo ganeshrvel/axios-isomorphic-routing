@@ -64,11 +64,11 @@ The JSON values are fetched from 'express/mock-data/*.json' files.
 
 
 ### Installation
-   ```shell
+```shell
     $ git clone --depth 1 --single-branch --branch master https://github.com/ganeshrvel/axios-isomorphic-routing.git
     
     $ cd axios-isomorphic-routing
-    ```
+```
 	
 ### Run
     $ npm install
