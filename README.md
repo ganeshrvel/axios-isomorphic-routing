@@ -24,15 +24,17 @@
 
 ### Installation
 ```shell
-    $ git clone --depth 1 --single-branch --branch master https://github.com/ganeshrvel/axios-isomorphic-routing.git
+$ git clone --depth 1 --single-branch --branch master https://github.com/ganeshrvel/axios-isomorphic-routing.git
     
-    $ cd axios-isomorphic-routing
+$ cd axios-isomorphic-routing
 ```
 	
 ### Run
-    $ npm install
+```shell
+$ npm install
     
-    $ npm run start
+$ npm run start
+```
 
 - App launch address: [http://localhost:3001/](http://localhost:3001/ "http://localhost:3001/")
 
@@ -100,7 +102,7 @@ The JSON values are fetched from 'express/mock-data/*.json' files.
    * @returns Promise
    */
    
-make({
+  make({
     request,
     queryString,
     data,
