@@ -22,6 +22,25 @@
 - Purge and rebuild the cache on the fly.
 
 
+### Installation
+```shell
+    $ git clone --depth 1 --single-branch --branch master https://github.com/ganeshrvel/axios-isomorphic-routing.git
+    
+    $ cd axios-isomorphic-routing
+```
+	
+### Run
+    $ npm install
+    
+    $ npm run start
+
+- App launch address: [http://localhost:3001/](http://localhost:3001/ "http://localhost:3001/")
+
+- For Server side Axios routing demo: [http://localhost:3001/demo/server](http://localhost:3001/demo/server "http://localhost:3001/demo/server")
+
+- For Client side Axios routing demo: Fire up the browser console.
+
+
 ### Structure
 
     |-- axios-isomorphic-routing
@@ -62,24 +81,6 @@ The JSON values are fetched from 'express/mock-data/*.json' files.
 
 **src/examples**: Demo for both server and client side Axios routing and method usage.
 
-
-### Installation
-```shell
-    $ git clone --depth 1 --single-branch --branch master https://github.com/ganeshrvel/axios-isomorphic-routing.git
-    
-    $ cd axios-isomorphic-routing
-```
-	
-### Run
-    $ npm install
-    
-    $ npm run start
-
-- App launch address: [http://localhost:3001/](http://localhost:3001/ "http://localhost:3001/")
-
-- For Server side Axios routing demo: [http://localhost:3001/demo/server](http://localhost:3001/demo/server "http://localhost:3001/demo/server")
-
-- For Client side Axios routing demo: Fire up the browser console.
 
 ### Usage
     // import make() method from api
